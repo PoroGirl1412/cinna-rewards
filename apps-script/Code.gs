@@ -19,7 +19,8 @@ const APP = {
     tea_snack: { name: 'คูปองเซ็ตชานมไข่มุก + ขนม', type: 'tasty', emoji: '🧋🍰', theme: 'set' },
     mega_snack: { name: 'คูปองขนมเบิ้ม ๆ', type: 'tasty', emoji: '🍰', theme: 'snack' },
     cinnamoroll: { name: 'คูปองน้องม่อน', type: 'tasty', emoji: '☁️', theme: 'cinna' },
-    cozy: { name: 'คูปองกินอิ่มนอนอุ่น', type: 'cozy', emoji: '🌙', theme: 'cozy' }
+    cozy: { name: 'คูปองกินอิ่มนอนอุ่น', type: 'cozy', emoji: '🌙', theme: 'cozy' },
+    p_kom: { name: 'คูปองพี่คม', type: 'spa', emoji: '🧖', theme: 'bubble' }
   }
 };
 
