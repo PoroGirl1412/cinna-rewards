@@ -1,0 +1,15 @@
+name = "cinna-rewards-api"
+main = "src/index.js"
+compatibility_date = "2026-10-22"
+
+[vars]
+SHEET_ID = "1A4eVPZhMvrf17UvFhoYxQ1W3ae2Tzh41t8jYblnBoWg"
+FRONTEND_ORIGIN = "https://porogirl1412.github.io"
+
+[[durable_objects.bindings]]
+name = "SERIALIZER"
+class_name = "Serializer"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Serializer"]
