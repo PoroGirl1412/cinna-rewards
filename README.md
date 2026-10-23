@@ -10,3 +10,4 @@ The GitHub Pages app in `index.html` uses a Cloudflare Worker to read and update
 4. Publish `index.html` through GitHub Pages from `main` and the repository root. Verify the published page reads and writes through the Worker, then retire the old Apps Script deployment if desired.
 
 The Worker expects the five existing tabs and column headers from `apps-script/Code.gs`. It does not create or reset the database. `SHEET_ID` and `FRONTEND_ORIGIN` are configured in `worker/wrangler.toml`; the service account key belongs only in the Cloudflare secret. Run `node --test worker/src/index.test.js` for the core point and coupon rules.
+https://porogirl1412.github.io/cinna-rewards/
