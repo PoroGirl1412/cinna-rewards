@@ -181,8 +181,8 @@ function mutate(method, payload, rows, ids) {
     requests.push(history(ids, 'USE_COUPON', person, rows.Coupons[row][2], -1, tasty, tasty, cozy, cozy, payload.note || 'ใช้คูปอง'));
   } else if (method === 'addWishlistItem') {
     const person = required(payload.person, 'กรุณาเลือกผู้เพิ่ม');
-    const title = required(payload.title, 'กรุณาใส่ชื่อร้านหรือสถานที่');
-    requests.push(append(ids, 'Wishlist', [crypto.randomUUID(), new Date().toISOString(), payload.listType === 'trip' ? 'trip' : 'food', title, String(payload.note || '').trim(), person, 'WISH']));
+    const title = required(payload.title, 'กรุณาใส่ชื่อรายการ');
+    requests.push(append(ids, 'Wishlist', [crypto.randomUUID(), new Date().toISOString(), ['trip', 'item'].includes(payload.listType) ? payload.listType : 'food', title, String(payload.note || '').trim(), person, 'WISH']));
   } else if (method === 'toggleWishlistItem') {
     const id = required(payload.id, 'ไม่พบรายการ');
     const row = findRow(rows.Wishlist, id);
